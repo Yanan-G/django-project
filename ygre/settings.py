@@ -76,6 +76,18 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ygre.wsgi.application'
 
 
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ygredb',
+        'USER': 'postgres',
+        'PASSWORD': '253253',
+        'HOST': 'localhost'
+    }
+}
 
 
 # Password validation
